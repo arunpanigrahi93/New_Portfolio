@@ -20,6 +20,12 @@ export interface Experience {
   description: string[];
   technologies: string[];
 }
+export interface Certification {
+  name: string;
+  issuer: string;
+  year: string;
+  credentialUrl?: string;
+}
 
 export interface SkillCategory {
   category: string;

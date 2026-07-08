@@ -1,7 +1,7 @@
 "use client";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import SectionTitle from "@/components/ui/SectionTitle";
-import { experiences, education } from "@/data/portfolio";
+import { experiences, education, certifications } from "@/data/portfolio";
 
 export default function Experience() {
   const { ref, isVisible } = useScrollReveal();
@@ -181,8 +181,9 @@ export default function Experience() {
             </div>
           </div>
 
-          {/* Education */}
+          {/* Education & Certifications */}
           <div>
+            {/* Education Heading */}
             <h3
               className="font-mono text-xs font-semibold uppercase tracking-widest mb-8 flex items-center gap-2"
               style={{ color: "var(--accent)" }}
@@ -209,7 +210,9 @@ export default function Experience() {
               {education.map((edu, idx) => (
                 <div
                   key={edu.institution}
-                  className={`card-hover rounded-2xl p-5 reveal ${isVisible ? "visible" : ""} reveal-delay-${idx + 2}`}
+                  className={`card-hover rounded-2xl p-5 reveal ${
+                    isVisible ? "visible" : ""
+                  } reveal-delay-${idx + 2}`}
                   style={{
                     background: "var(--surface)",
                     border: "1px solid var(--border)",
@@ -222,12 +225,14 @@ export default function Experience() {
                   >
                     {edu.institution}
                   </p>
+
                   <p
                     className="text-sm leading-relaxed mb-2"
                     style={{ color: "var(--muted)" }}
                   >
                     {edu.degree}
                   </p>
+
                   <span
                     className="font-mono text-xs font-semibold"
                     style={{ color: "var(--accent)" }}
@@ -237,7 +242,69 @@ export default function Experience() {
                 </div>
               ))}
 
-              {/* Availability card */}
+              {/* Certifications */}
+              <div className="pt-6">
+                <h3
+                  className="font-mono text-xs font-semibold uppercase tracking-widest mb-5 flex items-center gap-2"
+                  style={{ color: "var(--accent)" }}
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <circle cx="12" cy="8" r="6" />
+                    <path d="M8.21 13.89L7 22l5-3 5 3-1.21-8.11" />
+                  </svg>
+                  Certifications
+                </h3>
+
+                <div className="space-y-3">
+                  {certifications.map((cert, idx) => (
+                    <div
+                      key={cert.name}
+                      className={`card-hover rounded-2xl p-4 reveal ${
+                        isVisible ? "visible" : ""
+                      } reveal-delay-${idx + 5}`}
+                      style={{
+                        background: "var(--surface)",
+                        border: "1px solid var(--border)",
+                        boxShadow: "var(--shadow-sm)",
+                      }}
+                    >
+                      <p
+                        className="font-semibold text-sm leading-snug"
+                        style={{ color: "var(--text)" }}
+                      >
+                        {cert.name}
+                      </p>
+
+                      <p
+                        className="text-xs mt-1"
+                        style={{ color: "var(--muted)" }}
+                      >
+                        {cert.issuer}
+                      </p>
+
+                      <span
+                        className="font-mono text-xs font-semibold mt-2 inline-block"
+                        style={{ color: "var(--accent)" }}
+                      >
+                        {cert.year}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Availability Card */}
               <div
                 className="rounded-2xl p-5 mt-6"
                 style={{
@@ -254,6 +321,7 @@ export default function Experience() {
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500" />
                   </span>
+
                   <span
                     className="font-mono text-xs font-bold uppercase tracking-wider"
                     style={{ color: "var(--primary)" }}
@@ -261,6 +329,7 @@ export default function Experience() {
                     Available
                   </span>
                 </div>
+
                 <p
                   className="text-sm leading-relaxed"
                   style={{ color: "var(--text-2)" }}

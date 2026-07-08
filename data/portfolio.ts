@@ -131,6 +131,39 @@ export const experiences: Experience[] = [
   },
 ];
 
+export const certifications: Certification[] = [
+  {
+    name: "React - The Complete Guide",
+    issuer: "Udemy",
+    year: "2024",
+    credentialUrl: "https://www.udemy.com/",
+  },
+  {
+    name: "Node.js, Express & MongoDB",
+    issuer: "Udemy",
+    year: "2024",
+    credentialUrl: "https://www.udemy.com/",
+  },
+  {
+    name: "TypeScript Bootcamp",
+    issuer: "Udemy",
+    year: "2025",
+    credentialUrl: "https://www.udemy.com/",
+  },
+  {
+    name: "Generative AI with Large Language Models",
+    issuer: "Coursera",
+    year: "2026",
+    credentialUrl: "https://www.coursera.org/",
+  },
+  {
+    name: "LangChain & AI Agents",
+    issuer: "DeepLearning.AI",
+    year: "2026",
+    credentialUrl: "https://www.deeplearning.ai/",
+  }
+];
+
 export const skillCategories: SkillCategory[] = [
 	{
 		category: "Frontend",
