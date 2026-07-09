@@ -127,7 +127,8 @@ export default function About() {
                   </span>{" "}
                   delivering scalable web applications for enterprise
                   businesses. My expertise spans{" "}
-                  <strong style={{ color: "var(--primary)", fontWeight: 700 }}>
+                  <strong>
+                    {" "}
                     React.js, Next.js, TypeScript, JavaScript, Node.js,
                     Express.js, MongoDB, HTML5, CSS3, Tailwind CSS and modern
                     web development and CSS Frameworks
