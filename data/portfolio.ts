@@ -166,35 +166,72 @@ export const certifications: Certification[] = [
 
 export const skillCategories: SkillCategory[] = [
 	{
-		category: "Frontend",
-		icon: "🎨",
-		skills: ["React.js", "Next.js", "TypeScript", "JavaScript (ES6+)", "HTML5", "CSS3", "Bootstrap", "Material UI"],
-	},
-	{
-		category: "Backend",
-		icon: "⚙️",
-		skills: ["Node.js", "Express.js", "Firebase", "MongoDB", "REST APIs"],
-	},
-	{
-		category: "State & CMS",
-		icon: "🗄️",
-		skills: ["Redux", "Zustand", "Context API", "Directus", "AEM (Headless)"],
-	},
-	{
-		category: "Tools & DevOps",
-		icon: "🛠️",
-		skills: ["Git", "Bitbucket", "Jira", "npm", "AWS", "Jest", "React Testing Library"],
-	},
-	{
-		category: "Practices",
-		icon: "✅",
+		category: "Frontend Development",
+		icon: "🖥️",
 		skills: [
-			"Responsive Design",
-			"Lazy Loading",
+			"React.js",
+			"Next.js",
+			"TypeScript",
+			"JavaScript",
+			"HTML",
+			"CSS",
+			"TailwindCSS",
+			"Material-UI",
+		],
+	},
+	{
+		category: "Backend & Databases",
+		icon: "⚙️",
+		skills: [
+			"Node.js",
+			"Express.js",
+			"Spring Boot",
+			"MongoDB",
+			"PostgreSQL",
+			"JWT",
+		],
+	},
+	{
+		category: "State Management & Testing",
+		icon: "🧪",
+		skills: [
+			"Redux Toolkit",
+			"React Query",
+			"Jest",
+			"React Testing Library",
+			"Postman",
+		],
+	},
+	{
+		category: "Cloud, DevOps & Performance",
+		icon: "☁️",
+		skills: [
+			"AWS",
+			"Azure",
+			"Git",
+			"CI/CD",
+			"Jenkins",
+		],
+	},
+	{
+		category: "AI & Developer Tools",
+		icon: "🤖",
+		skills: [
+			"LangChain.js",
+			"OpenAI",
+			"GitHub Copilot",
+			"Claude Code",
+		],
+	},
+	{
+		category: "Engineering Practices",
+		icon: "🚀",
+		skills: [
+			"Performance Optimization",
 			"Code Splitting",
-			"WCAG Accessibility",
-			"Modular Architecture",
-			"Agile",
+			"Lazy Loading",
+			"Responsive Design",
+			"REST APIs",
 		],
 	},
 ];
