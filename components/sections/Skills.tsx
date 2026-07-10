@@ -2,6 +2,7 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import SectionTitle from "@/components/ui/SectionTitle";
 import { skillCategories } from "@/data/portfolio";
+import { BrainCircuit, Sparkles, Code2, Cloud, Network } from "lucide-react";
 
 export default function Skills() {
   const { ref, isVisible } = useScrollReveal();
@@ -17,7 +18,7 @@ export default function Skills() {
           <SectionTitle
             eyebrow="Technology Suite"
             title="Tools I work with"
-            subtitle="A curated stack built through 4+ years of production experience."
+            subtitle="A curated stack built through 7+ years of production experience."
             align="center"
           />
         </div>
@@ -93,9 +94,24 @@ export default function Skills() {
             >
               Currently Exploring
             </p>
-            <p className="text-sm mt-0.5" style={{ color: "var(--muted)" }}>
-              Deepening expertise in Web Performance, Server Components, Testing
-              (Jest / RTL), and AWS cloud services.
+            <p
+              className="text-sm mt-0.5 flex flex-wrap items-center gap-2"
+              style={{ color: "var(--muted)" }}
+            >
+              <BrainCircuit className="h-4 w-4 text-violet-500" />
+              <span>AI Agentic Systems</span>
+
+              <Sparkles className="h-4 w-4 text-cyan-500 ml-2" />
+              <span>Large Language Models (LLMs)</span>
+
+              <Code2 className="h-4 w-4 text-blue-500 ml-2" />
+              <span>Scalable Full-Stack Development</span>
+
+              <Cloud className="h-4 w-4 text-sky-500 ml-2" />
+              <span>Cloud-Native Solutions</span>
+
+              <Network className="h-4 w-4 text-emerald-500 ml-2" />
+              <span>System Design</span>
             </p>
           </div>
         </div>
