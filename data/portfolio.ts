@@ -246,6 +246,7 @@ export const skillCategories: SkillCategory[] = [
 			"GitHub Copilot",
 			"Claude Code",
 			"Prompt Engineering",
+      "ChatGpt"
 		],
 	},
 ];
