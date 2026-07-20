@@ -36,10 +36,11 @@ export const experiences: Experience[] = [
     period: "Sep 2021 – Present",
     location: "Hyderabad, India",
     description: [
-      "Developed reusable React.js components and optimized frontend performance using code splitting, lazy loading, memoization, and bundle optimization, reducing bundle size by ~30% and improving page load time by ~25%.",
-      "Accelerated development using GitHub Copilot, Claude Code, and ChatGPT for code generation, debugging, testing, and documentation, reducing development effort by ~35%.",
-      "Built a LangChain.js-based AI assistant to analyze vulnerability reports, recommend secure dependency versions, and automate remediation workflows, reducing manual effort by ~60%.",
-      "Implemented automated certificate lifecycle management, reducing manual effort by ~80% while improving deployment reliability through code reviews and automated testing.",
+  "Developed reusable React.js components and optimized frontend performance using code splitting, lazy loading, memoization, and bundle optimization, reducing bundle size by ~30% and improving page load time by ~25%.",
+
+  "Built scalable Node.js/Express.js REST APIs with JWT authentication, optimized MongoDB queries, and implemented caching, reducing API response time by ~45% and improving backend performance by ~35%.",
+
+  "Built a LangChain.js-based AI assistant to analyze vulnerability reports, recommend secure dependency versions, and automate remediation workflows, reducing manual effort by ~60%."
     ],
     technologies: [
       "React.js",
@@ -54,7 +55,6 @@ export const experiences: Experience[] = [
       "JWT",
       "GitHub Copilot",
       "Claude Code",
-      "ChatGPT",
       "LangChain.js",
       "Git",
       "Jest",
